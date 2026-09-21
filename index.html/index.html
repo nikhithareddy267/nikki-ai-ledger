@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="The Nikki AI Ledger — independent research on AI governance, law, risk and compliance."
+>
+
+<title>The Nikki AI Ledger</title>
+
+
+<!-- GOOGLE FONTS -->
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+rel="stylesheet"
+>
+
+
+<style>
+
+/* ========================================
+   THE NIKKI AI LEDGER
+   LUXURY GOTHIC THEME
+======================================== */
+
+:root {
+
+    --black: #000000;
+
+    --damask: #220C12;
+
+    --rose: #430102;
+
+    --blood: #9F0A10;
+
+    --gold: #C1914F;
+
+    --ivory: #EBE0C2;
+
+    --soft-ivory: #D3C4A7;
+
+    --muted: #958773;
+
+    --border:
+        rgba(193,145,79,0.20);
+
+}
+
+
+/* RESET */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    background: #050203;
+
+    color: var(--ivory);
+
+    font-family: "Inter", sans-serif;
+
+    line-height: 1.7;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+
+    height: 78px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    background:
+        rgba(0,0,0,0.94);
+
+    backdrop-filter:
+        blur(18px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.logo {
+
+    color: var(--gold);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-weight: 700;
+
+    font-size: 22px;
+
+    letter-spacing: 2.5px;
+
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 32px;
+
+}
+
+
+nav a {
+
+    color: #CDBFA7;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+
+}
+
+
+nav a:hover {
+
+    color: var(--gold);
+
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+
+    min-height:
+        calc(100vh - 78px);
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(67,1,2,0.32),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(34,12,18,0.80),
+            transparent 40%
+        ),
+
+        linear-gradient(
+            135deg,
+            #000000 0%,
+            #0E0406 40%,
+            #220C12 72%,
+            #430102 100%
+        );
+
+}
+
+
+.hero-inner {
+
+    width: 100%;
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 100px 8%;
+
+}
+
+
+.eyebrow,
+.section-label {
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+}
+
+
+.hero h1 {
+
+    max-width: 1050px;
+
+    margin-top: 30px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(62px,8vw,110px);
+
+    font-weight: 500;
+
+    line-height: 0.94;
+
+    letter-spacing: -2px;
+
+    color: #E7D9BC;
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: #CFC1A5;
+
+}
+
+
+.hero-description {
+
+    max-width: 650px;
+
+    margin-top: 38px;
+
+    color: #C5B79F;
+
+    font-size: 17px;
+
+}
+
+
+.hero-button {
+
+    display: inline-block;
+
+    margin-top: 40px;
+
+    padding: 14px 26px;
+
+    border:
+        1px solid var(--gold);
+
+    color: var(--ivory);
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    transition: 0.25s;
+
+}
+
+
+.hero-button:hover {
+
+    background:
+        rgba(193,145,79,0.12);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* ========================================
+   PUBLICATION
+======================================== */
+
+.publication {
+
+    padding:
+        120px 10%;
+
+    background:
+        var(--ivory);
+
+    color:
+        var(--damask);
+
+}
+
+
+.publication .section-label {
+
+    color:
+        var(--blood);
+
+}
+
+
+.publication h2 {
+
+    max-width:
+        950px;
+
+    margin:
+        22px 0 30px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(48px,6vw,76px);
+
+    line-height:
+        1;
+
+}
+
+
+.publication p:last-child {
+
+    max-width:
+        760px;
+
+    font-size:
+        17px;
+
+}
+
+
+/* ========================================
+   TOPICS
+======================================== */
+
+.topics {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+    padding:
+        120px 8%;
+
+}
+
+
+.section-heading {
+
+    margin-bottom:
+        60px;
+
+}
+
+
+.section-heading h2 {
+
+    margin-top:
+        18px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(45px,5vw,65px);
+
+    font-weight:
+        500;
+
+}
+
+
+.topic-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    border-top:
+        1px solid var(--border);
+
+}
+
+
+.topic {
+
+    padding:
+        45px 40px 45px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.topic:nth-child(odd) {
+
+    border-right:
+        1px solid var(--border);
+
+}
+
+
+.topic:nth-child(even) {
+
+    padding-left:
+        40px;
+
+}
+
+
+.topic-number {
+
+    color:
+        var(--blood);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        26px;
+
+}
+
+
+.topic h3 {
+
+    margin:
+        12px 0;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        32px;
+
+    font-weight:
+        600;
+
+}
+
+
+.topic p {
+
+    color:
+        #AA9C87;
+
+    font-size:
+        14px;
+
+}
+
+
+/* ========================================
+   LEDGER
+======================================== */
+
+.ledger {
+
+    padding:
+        120px 8%;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #080204,
+            #000000
+        );
+
+}
+
+
+.posts {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        24px;
+
+}
+
+
+.post-card {
+
+    min-height:
+        390px;
+
+    padding:
+        35px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(67,1,2,0.35),
+            rgba(5,1,2,0.95)
+        );
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    transition:
+        0.25s;
+
+}
+
+
+.post-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(193,145,79,0.65);
+
+}
+
+
+.post-category {
+
+    color:
+        var(--gold);
+
+    font-size:
+        10px;
+
+    letter-spacing:
+        3px;
+
+}
+
+
+.post-card h3 {
+
+    margin:
+        25px 0 20px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        30px;
+
+    line-height:
+        1.1;
+
+}
+
+
+.post-card p {
+
+    color:
+        #B1A38E;
+
+    font-size:
+        14px;
+
+}
+
+
+.post-meta {
+
+    margin-top:
+        auto;
+
+    padding-top:
+        35px;
+
+    color:
+        #766958;
+
+    font-size:
+        11px;
+
+}
+
+
+/* EMPTY LEDGER */
+
+.empty-ledger {
+
+    min-height:
+        360px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    text-align:
+        center;
+
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.empty-ledger .volume {
+
+    color:
+        var(--gold);
+
+    letter-spacing:
+        4px;
+
+    font-size:
+        10px;
+
+}
+
+
+.empty-ledger h3 {
+
+    margin:
+        20px 0 8px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        45px;
+
+    font-weight:
+        500;
+
+}
+
+
+.empty-ledger p:last-child {
+
+    color:
+        #817362;
+
+    font-size:
+        13px;
+
+}
+
+
+/* ========================================
+   MIDNIGHT BRIEF
+======================================== */
+
+.newsletter {
+
+    padding:
+        140px 8%;
+
+    text-align:
+        center;
+
+    background:
+
+        radial-gradient(
+            circle,
+            #351014,
+            #220C12 48%,
+            #000000 90%
+        );
+
+}
+
+
+.newsletter h2 {
+
+    max-width:
+        900px;
+
+    margin:
+        20px auto;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(50px,6vw,76px);
+
+    font-weight:
+        500;
+
+}
+
+
+.newsletter-description {
+
+    max-width:
+        620px;
+
+    margin:
+        0 auto 35px;
+
+    color:
+        #BCAF98;
+
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+
+    padding:
+        60px 7%;
+
+    background:
+        #000000;
+
+    border-top:
+        1px solid var(--border);
+
+}
+
+
+.footer-logo {
+
+    color:
+        var(--gold);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    letter-spacing:
+        2px;
+
+}
+
+
+.footer-description {
+
+    color:
+        #796E60;
+
+    font-size:
+        12px;
+
+    margin-top:
+        7px;
+
+}
+
+
+.footer-links {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        24px;
+
+    margin-top:
+        28px;
+
+}
+
+
+.footer-links a {
+
+    color:
+        #A89A86;
+
+    font-size:
+        12px;
+
+}
+
+
+.copyright {
+
+    margin-top:
+        40px;
+
+    color:
+        #655B4E;
+
+    font-size:
+        11px;
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media
+(max-width:850px) {
+
+    nav {
+
+        display:
+            none;
+
+    }
+
+
+    .topic-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .topic,
+    .topic:nth-child(even) {
+
+        padding:
+            35px 0;
+
+        border-right:
+            none;
+
+    }
+
+
+    .posts {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+
+@media
+(max-width:550px) {
+
+    header {
+
+        padding:
+            0 5%;
+
+    }
+
+
+    .logo {
+
+        font-size:
+            17px;
+
+    }
+
+
+    .hero-inner {
+
+        padding:
+            80px 7%;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            53px;
+
+    }
+
+
+    .publication,
+    .topics,
+    .ledger,
+    .newsletter {
+
+        padding-left:
+            7%;
+
+        padding-right:
+            7%;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<header>
+
+<a
+href="index.html"
+class="logo">
+
+THE NIKKI AI LEDGER
+
+</a>
+
+
+<nav>
+
+<a href="#about">
+About
+</a>
+
+<a href="#ledger">
+The Ledger
+</a>
+
+<a href="#topics">
+Topics
+</a>
+
+<a href="#newsletter">
+The Midnight Brief
+</a>
+
+</nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-inner">
+
+
+<p class="eyebrow">
+
+AI GOVERNANCE · LAW · RISK · COMPLIANCE
+
+</p>
+
+
+<h1>
+
+Governing intelligence
+
+<span>
+
+in an age of machines.
+
+</span>
+
+</h1>
+
+
+<p class="hero-description">
+
+Independent research and practical explanations
+of artificial intelligence governance,
+emerging regulation and enterprise risk.
+
+</p>
+
+
+<a
+href="#ledger"
+class="hero-button">
+
+Read the Ledger
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<!-- PUBLICATION -->
+
+<section
+class="publication"
+id="about">
+
+
+<p class="section-label">
+
+THE PUBLICATION
+
+</p>
+
+
+<h2>
+
+AI governance without the legal fog.
+
+</h2>
+
+
+<p>
+
+The Nikki AI Ledger explores the laws,
+standards, systems and risks shaping artificial
+intelligence.
+
+The goal is simple: translate difficult legal
+and technical material into clear,
+useful analysis.
+
+</p>
+
+
+</section>
+
+
+
+<!-- TOPICS -->
+
+<section
+class="topics"
+id="topics">
+
+
+<div class="section-heading">
+
+
+<p class="section-label">
+
+COVERAGE
+
+</p>
+
+
+<h2>
+
+What the Ledger follows
+
+</h2>
+
+
+</div>
+
+
+
+<div class="topic-grid">
+
+
+<div class="topic">
+
+<p class="topic-number">
+01
+</p>
+
+<h3>
+AI Governance
+</h3>
+
+<p>
+
+Accountability, governance programs,
+AI inventories, human oversight
+and organizational controls.
+
+</p>
+
+</div>
+
+
+
+<div class="topic">
+
+<p class="topic-number">
+02
+</p>
+
+<h3>
+AI Law
+</h3>
+
+<p>
+
+Regulation, legal obligations
+and developments including
+the EU AI Act.
+
+</p>
+
+</div>
+
+
+
+<div class="topic">
+
+<p class="topic-number">
+03
+</p>
+
+<h3>
+Risk & Compliance
+</h3>
+
+<p>
+
+AI risk assessment,
+documentation,
+auditing and enterprise compliance.
+
+</p>
+
+</div>
+
+
+
+<div class="topic">
+
+<p class="topic-number">
+04
+</p>
+
+<h3>
+Standards
+</h3>
+
+<p>
+
+NIST AI RMF,
+ISO/IEC 42001
+and emerging governance frameworks.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- LEDGER -->
+
+<section
+class="ledger"
+id="ledger">
+
+
+<div class="section-heading">
+
+
+<p class="section-label">
+
+THE LEDGER
+
+</p>
+
+
+<h2>
+
+Essays & Research
+
+</h2>
+
+
+</div>
+
+
+<div
+class="posts"
+id="posts">
+</div>
+
+
+
+<div
+class="empty-ledger"
+id="empty-ledger">
+
+
+<p class="volume">
+
+VOL. I
+
+</p>
+
+
+<h3>
+
+The first entry is being written.
+
+</h3>
+
+
+<p>
+
+Research begins soon.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- NEWSLETTER -->
+
+<section
+class="newsletter"
+id="newsletter">
+
+
+<p class="section-label">
+
+THE MIDNIGHT BRIEF
+
+</p>
+
+
+<h2>
+
+Notes from the edge of AI law.
+
+</h2>
+
+
+<p class="newsletter-description">
+
+A future briefing covering artificial
+intelligence governance,
+regulation and emerging enterprise risk.
+
+</p>
+
+
+<a
+href="mailto:YOUR_EMAIL@gmail.com"
+class="hero-button">
+
+Join the Brief
+
+</a>
+
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+
+<h3 class="footer-logo">
+
+THE NIKKI AI LEDGER
+
+</h3>
+
+
+<p class="footer-description">
+
+AI Governance · Law · Risk · Compliance
+
+</p>
+
+
+<div class="footer-links">
+
+<a href="#about">
+About
+</a>
+
+<a href="#">
+Editorial Policy
+</a>
+
+<a href="#">
+Disclaimer
+</a>
+
+<a href="#">
+Privacy
+</a>
+
+</div>
+
+
+<p class="copyright">
+
+© 2026 The Nikki AI Ledger
+
+</p>
+
+
+</footer>
+
+
+
+<script>
+
+/* =========================================
+   YOUR BLOG POSTS LIVE HERE
+========================================= */
+
+const posts = [
+
+    /*
+    YOUR POSTS GO HERE LATER.
+
+    EXAMPLE:
+
+    {
+        title:
+        "What Is AI Governance?",
+
+        category:
+        "AI GOVERNANCE",
+
+        description:
+        "A beginner's guide to understanding how organizations govern artificial intelligence.",
+
+        date:
+        "28 September 2026",
+
+        readTime:
+        "10 min read",
+
+        url:
+        "articles/what-is-ai-governance.html"
+    }
+
+    */
+
+];
+
+
+
+const postsContainer =
+document.getElementById("posts");
+
+
+const emptyLedger =
+document.getElementById("empty-ledger");
+
+
+
+if (posts.length === 0) {
+
+    emptyLedger.style.display =
+        "flex";
+
+}
+
+
+else {
+
+    emptyLedger.style.display =
+        "none";
+
+
+    posts.forEach(post => {
+
+
+        const article =
+            document.createElement("article");
+
+
+        article.className =
+            "post-card";
+
+
+        article.innerHTML = `
+
+            <p class="post-category">
+
+                ${post.category}
+
+            </p>
+
+
+            <h3>
+
+                <a href="${post.url}">
+
+                    ${post.title}
+
+                </a>
+
+            </h3>
+
+
+            <p>
+
+                ${post.description}
+
+            </p>
+
+
+            <div class="post-meta">
+
+                ${post.date}
+                ·
+                ${post.readTime}
+
+            </div>
+
+        `;
+
+
+        postsContainer.appendChild(
+            article
+        );
+
+
+    });
+
+}
+
+</script>
+
+
+</body>
+
+</html>
